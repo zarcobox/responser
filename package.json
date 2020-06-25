@@ -25,15 +25,12 @@
     "content",
     "payload"
   ],
-  "author": "Luiz Felipe Zarco <felipezarco@hotmail.com> (https://gitlab.com/felipezarco)",
+  "author": "Luiz Felipe Zarco <felipezarco@hotmail.com> (https://github.com/felipezarco)",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/felipezarco/responser"
-  },
+  "repository": "git://github.com/zarcobox/responser.git",
   "dependencies": {
     "http-status-codes": "^1.4.0"
   },
