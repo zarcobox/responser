@@ -30,7 +30,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "git://github.com/zarcobox/responser.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zarcobox/responser.git"
+  },
   "dependencies": {
     "http-status-codes": "^1.4.0"
   },
@@ -45,5 +48,9 @@
     "ts-jest": "^26.1.0",
     "tsc": "^1.20150623.0",
     "typescript": "^3.9.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/zarcobox/responser/issues"
+  },
+  "homepage": "https://github.com/zarcobox/responser#readme"
 }
