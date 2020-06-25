@@ -8,7 +8,7 @@ While creating an API, a programmer should not always need to be concerned about
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/responser.svg)](https://badge.fury.io/js/responser) [![Build Status](https://travis-ci.org/felipezarco/responser.svg?branch=master)](https://travis-ci.org/felipezarco/responser) [![Coverage Status](https://coveralls.io/repos/github/felipezarco/responser/badge.svg?branch=master)](https://coveralls.io/github/felipezarco/responser?branch=master) ![Dependencies](https://img.shields.io/david/felipezarco/responser) ![Downloads](https://img.shields.io/npm/dw/responser)
 
-[![npm](https://nodei.co/npm/responser.png)](https://www.npmjs.com/package/responser)
+[![npm](https://nodei.co/npm/responser.png)]  (https://www.npmjs.com/package/responser)
 
 ## Installation:
 
@@ -239,9 +239,7 @@ Thanks for your interest in contributing to this repo!
 
 ## License
 
-This code is licensed under the 
-[MIT License](https://github.com/zarcobox/responser/blob/master/LICENSE). See the 
-[LICENSE.md](https://github.com/zarcobox/responser/blob/master/LICENSE) file for more info.
+This code is licensed under the [MIT License](https://github.com/zarcobox/responser/blob/master/LICENSE). See the [LICENSE.md](https://github.com/zarcobox/responser/blob/master/LICENSE) file for more info.
 
 
 
