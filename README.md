@@ -17,19 +17,19 @@ The latest version is available at: https://www.npmjs.com/package/responser
 Use your favorite package manager to install. For instance: 
 
 ```
-  yarn add responser
+  yarn add @zarcobox/responser
 ```
 
 Then import it:
 
 ```javascript
-import responser from 'responser'
+import responser from '@zarcobox/responser'
 ```
 
 Or, for commonjs:
 
 ```javascript
-const responser = require('responser')
+const responser = require('@zarcobox/responser')
 ```
 
 **Add responser as an express middleware**:
