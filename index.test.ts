@@ -72,12 +72,12 @@ test('it returns errors instead of data on success false', async () => {
 
   app.use(responser)
 
+  const invalid = [
+    { name: 'Kapax', message: 'This is not a known planet!' }
+  ]
+
   app.post('/planets', (_, response: Response) => 
-    response.send_badRequest('Invalid data was sent!', {
-      invalid: [
-        { name: 'Kapax', message: 'This is not a known planet!' }
-      ]
-    })
+    response.send_badRequest('Invalid data was sent!', invalid)
   )
 
   const response = await request(app).post('/planets')
@@ -87,13 +87,12 @@ test('it returns errors instead of data on success false', async () => {
     code: 400,
     message: 'Invalid data was sent!',
     success: false,
-    errors: {
-      invalid: [
-        { name: 'Kapax', message: 'This is not a known planet!' }
-      ]
-    }
+    errors: [
+      { name: 'Kapax', message: 'This is not a known planet!' }
+    ]
   })
 
   expect(response.status).toBe(400)
 
 })
+1

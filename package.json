@@ -1,7 +1,7 @@
 {
-  "name": "responser",
-  "version": "2.0.5",
-  "description": "Response HTTP standard",
+  "name": "@zarcobox/responser",
+  "version": "3.0.0",
+  "description": "The simplest way to send HTTP responses in express.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -27,6 +27,9 @@
   ],
   "author": "Luiz Felipe Zarco <felipezarco@hotmail.com> (https://gitlab.com/felipezarco)",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/felipezarco/responser"

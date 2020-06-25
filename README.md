@@ -1,5 +1,9 @@
 # Responser
 
+> The simplest way to send HTTP responses in express.
+
+![vscode suggestions](https://raw.githubusercontent.com/felipezarco/files/master/images/screenshots/responser.png "Responser typescript methods suggestion")
+
 While creating an API, a programmer should not always need to be concerned about the status code and the data type of your responses. Responser gives you a simple way of returning an REST API base response for each one of the HTTP status codes availables.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/responser.svg)](https://badge.fury.io/js/responser) [![Build Status](https://travis-ci.org/felipezarco/responser.svg?branch=master)](https://travis-ci.org/felipezarco/responser) [![Coverage Status](https://coveralls.io/repos/github/felipezarco/responser/badge.svg?branch=master)](https://coveralls.io/github/felipezarco/responser?branch=master) ![Dependencies](https://img.shields.io/david/felipezarco/responser) ![Downloads](https://img.shields.io/npm/dw/responser)
@@ -28,7 +32,7 @@ Or, for commonjs:
 const responser = require('responser')
 ```
 
-Then you need to add responser as an express middleware:
+**Add responser as an express middleware**:
 
 ```javascript
 app.use(responser)
@@ -38,7 +42,9 @@ And you're good to go!
 
 ## Usage:
 
-Since responser overwrites Express' interface, you can find the responser send_* methods directly in the express response. Methods accept two parameters: 
+Since responser overwrites Express' interface, you can find the responser send_* methods directly in the express response. 
+
+Methods accept two parameters: 
 
 * Required: message (string)
 * Optional: data || errors (any | undefiend)
@@ -110,9 +116,7 @@ class PlanetController {
     // ...
 
     if(invalid.length) return response.send_badRequest(
-      'The request contains one or more errors!', {
-        invalid
-      }
+      'The request contains one or more errors!', invalid
     )
 
     // ...
@@ -131,11 +135,9 @@ Which outputs:
     code: 400,
     message: 'The request contains one or more errors!',
     success: false,
-    errors: {
-      invalid: [
-        { name: 'planetName', message: 'The planet name was not given!' }
-      ]
-    }
+    errors: [
+      { name: 'planetName', message: 'The planet name was not given!' }
+    ]
   }
 ```
 
@@ -148,15 +150,14 @@ Where:
 
 - `success` is a boolean which is true for 1XX and 2XX HTTP Status Codes;
 
-- `data` **or** `errors` is an object with the second argument. It is `undefined` if none is given.
+- `data` **or** `errors` is the key for your second argument containing the payload. It is `undefined` if none is given.
 
 **Note**: `data` is the key name when `success` is `true` while `errors` is the key when `success` is `false`.
 
-With typescript, you can easily access all methods:
+## Methods
 
-![vscode suggestions](https://raw.githubusercontent.com/felipezarco/files/master/images/screenshots/responser.png "Responser typescript methods suggestion")
+ With typescript, you can easily access all methods by typing `.send_` in your response variable. The following methods are currently available (method, code and status).
 
-The following methods are currently available (method, code and status):
 ```javascript
 send_accepted                      202 ACCEPTED 
 send_badGateway                    502 BAD_GATEWAY 
@@ -214,6 +215,34 @@ send_unsupportedMediaType          415 UNSUPPORTED_MEDIA_TYPE
 send_useProxy                      305 USE_PROXY 
 ```
 
-License MIT @ Felipe Zarco
+## Testing
+
+Run the test suit with `yarn test`.
+
+## Contributing
+
+If you want to contribute in any of theses ways:
+
+- Give your ideas or feedback
+- Question something
+- Point out a problem or issue
+- Enhance the code or its documentation
+- Help in any other way
+
+You can (and should) [open an issue](https://github.com/zarcobox/responser/issues/new) or even a [pull request](https://github.com/zarcobox/response/compare)!
+
+Thanks for your interest in contributing to this repo!
+
+## Author
+
+[Luiz Felipe Zarco](https://github.com/felipezarco) (felipezarco@hotmail.com)
+
+## License
+
+This code is licensed under the 
+[MIT License](https://github.com/zarcobox/responser/blob/master/LICENSE). See the 
+[LICENSE.md](https://github.com/zarcobox/responser/blob/master/LICENSE) file for more info.
+
+
 
 
