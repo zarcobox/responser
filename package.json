@@ -1,6 +1,6 @@
 {
   "name": "@zarcobox/responser",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "The simplest way to send HTTP responses in express.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public",
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
