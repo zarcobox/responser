@@ -6,7 +6,7 @@
 
 While creating an API, a programmer should not always need to be concerned about the status code and the data type of your responses. Responser gives you a simple way of returning an REST API base response for each one of the HTTP status codes availables.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/responser.svg)](https://badge.fury.io/js/responser) [![Build Status](https://travis-ci.org/zarcobox/responser.svg?branch=master)](https://travis-ci.org/zarcobox/responser) [![Coverage Status](https://coveralls.io/repos/github/zarcobox/responser/badge.svg?branch=master)](https://coveralls.io/github/zarcobox/responser?branch=master) ![Dependencies](https://img.shields.io/david/zarcobox/responser) ![Downloads](https://img.shields.io/npm/dw/responser)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/%40zarcobox%2Fresponser.svg)](https://badge.fury.io/js/%40zarcobox%2Fresponser) [![Build Status](https://travis-ci.org/zarcobox/responser.svg?branch=master)](https://travis-ci.org/zarcobox/responser) [![Coverage Status](https://coveralls.io/repos/github/zarcobox/responser/badge.svg?branch=master)](https://coveralls.io/github/zarcobox/responser?branch=master) ![Dependencies](https://img.shields.io/david/zarcobox/responser) ![Downloads](https://img.shields.io/npm/dw/responser)
 
 [![npm](https://nodei.co/npm/responser.png)](https://www.npmjs.com/package/@zarcobox/responser)
 

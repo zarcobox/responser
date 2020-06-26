@@ -1,4 +1,4 @@
-import responser from './dist/index'
+import responser from './index'
 import express from 'express'
 import request from 'supertest'
 import { Response } from 'express'
