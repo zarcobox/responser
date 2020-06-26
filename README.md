@@ -12,7 +12,7 @@ While creating an API, a programmer should not always need to be concerned about
 
 ## Installation:
 
-The latest version is available at: https://www.npmjs.com/package/responser
+The latest version is available at: https://www.npmjs.com/package/@zarcobox/responser
 
 Use your favorite package manager to install. For instance: 
 
