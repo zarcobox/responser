@@ -1,6 +1,6 @@
 {
   "name": "@zarcobox/responser",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The simplest way to send HTTP responses in express.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,8 +28,7 @@
   "author": "Luiz Felipe Zarco <felipezarco@hotmail.com> (https://github.com/felipezarco)",
   "license": "MIT",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "repository": {
     "type": "git",
