@@ -10,7 +10,7 @@ While creating an API, a programmer should not always need to be concerned about
 
 [![npm](https://nodei.co/npm/@zarcobox/responser.png)](https://www.npmjs.com/package/@zarcobox/responser)
 
-## Installation:
+## Installation
 
 The latest version is available at: https://www.npmjs.com/package/@zarcobox/responser
 
@@ -40,11 +40,11 @@ app.use(responser)
 
 And you're good to go!
 
-## Usage:
+## Usage
 
-Since responser overwrites Express' interface, you can find the responser send_* methods directly in the express response. 
+Since responser overwrites Express' interface, you can find the responser send_* methods directly in the express response.  
 
-Methods accept two parameters: 
+Methods accept two parameters:  
 
 * Required: message (string)
 * Optional: data || errors (any | undefiend)
@@ -83,7 +83,7 @@ Content-Type: application/json; charset=utf-8
   "success": true,
   "data": {
     "planets": [
-       "Mercury", 
+       "Mercury",
        "Venus",
        "Earth",
        "Mars",
@@ -127,7 +127,7 @@ class PlanetController {
 export default new PlanetController()
 ```
 
-Which outputs: 
+Which outputs:  
 
 ```javascript
   {
@@ -141,16 +141,15 @@ Which outputs:
   }
 ```
 
-
 Where:
 
-- `code` is a number HTTP Status Code;
+* `code` is a number HTTP Status Code;
 
-- `status` is a string with the name of the HTTP Status;
+* `status` is a string with the name of the HTTP Status;
 
-- `success` is a boolean which is true for 1XX and 2XX HTTP Status Codes;
+* `success` is a boolean which is true for 1XX and 2XX HTTP Status Codes;
 
-- `data` **or** `errors` is the key for your second argument containing the payload. It is `undefined` if none is given.
+* `data` **or** `errors` is the key for your second argument containing the payload. It is `undefined` if none is given.
 
 **Note**: `data` is the key name when `success` is `true` while `errors` is the key when `success` is `false`.
 
@@ -229,7 +228,7 @@ If you want to contribute in any of theses ways:
 - Enhance the code or its documentation
 - Help in any other way
 
-You can (and should) [open an issue](https://github.com/zarcobox/responser/issues/new) or even a [pull request](https://github.com/zarcobox/response/compare)!
+You can (and should) [open an issue](https://github.com/zarcobox/responser/issues/new) or even a [pull request](https://github.com/zarcobox/responser/compare)!
 
 Thanks for your interest in contributing to this repo!
 
@@ -239,8 +238,4 @@ Thanks for your interest in contributing to this repo!
 
 ## License
 
-This code is licensed under the [MIT License](https://github.com/zarcobox/responser/blob/master/LICENSE). See the [LICENSE.md](https://github.com/zarcobox/responser/blob/master/LICENSE) file for more info.
-
-
-
-
+This code is licensed under the [MIT License](https://github.com/zarcobox/responser/blob/master/LICENSE.md). See the [LICENSE.md](https://github.com/zarcobox/responser/blob/master/LICENSE.md) file for more info.
